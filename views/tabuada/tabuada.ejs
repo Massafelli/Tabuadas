@@ -1,0 +1,25 @@
+<%-include ('../partials/header')%>
+    <br>
+    <br>
+    <div class="starter-template">
+        <h1>Escolha o seu numero</h1>
+        <table class="table table-striped table-bordered table-hover">
+            <%tabuadas.map(item=> {%>
+                <tr>
+                    <td>
+                        <%=item.i%>
+                    </td>
+                    <td>X</td>
+                    <td>
+                        <%=item.num%>
+                    </td>
+                    <td>=</td>
+                    <td>
+                        <%=item.result%>
+                    </td>
+                </tr>
+                <%})%>
+        </table>
+    </div>
+
+    <%-include ('../partials/footer')%>
